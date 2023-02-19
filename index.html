@@ -51,6 +51,26 @@
             >
           </li>
         </ul>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <svg
+            width="32"
+            height="22"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -65,7 +85,8 @@
           </button>
         </div>
       </section>
-      <!-- SECTION FEATuRE -->
+
+      <!-- SECTION FEATURE -->
       <section class="section section-feature">
         <div class="container container-feauere">
           <h2 class="visual-hidden">Featere</h2>
@@ -131,30 +152,109 @@
           <h2 class="works-title">What are we doing</h2>
           <ul class="works-list">
             <li class="works-item">
-              <img
-                class="works-img"
-                src="./img/works/pic1.jpg"
-                alt
-                width="360"
-              />
+              <picture>
+                <source
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/works/img1_deskt@1x.webp 1x,
+                    ./img/works/img1_deskt@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/works/img1_tablet@1x.webp 1x,
+                    ./img/works/img1_tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/works/img1_mobile@1x.webp 1x,
+                    ./img/works/img1_mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  class="works-img"
+                  src="./img/works/img1_deskt@1x.webp"
+                  alt
+                  width="360"
+                />
+              </picture>
             </li>
 
             <li class="works-item">
-              <img
-                class="works-img"
-                src="./img/works/pic2.jpg"
-                alt
-                width="360"
-              />
+              <picture>
+                <source
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/works/img2_deskt@1x.webp 1x,
+                    ./img/works/img2_deskt@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/works/img2_tablet@1x.webp 1x,
+                    ./img/works/img2_tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/works/img2_mobile@1x.webp 1x,
+                    ./img/works/img2_mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  class="works-img"
+                  src="./img/works/img2_deskt@1x.webp"
+                  alt
+                  width="360"
+                />
+                />
+              </picture>
             </li>
 
             <li class="works-item">
-              <img
-                class="works-img"
-                src="./img/works/pic3.jpg"
-                alt
-                width="360"
-              />
+              <picture>
+                <source
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/works/img3_deskt@1x.webp 1x,
+                    ./img/works/img3_deskt@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/works/img3_tablet@1x.webp 1x,
+                    ./img/works/img3_tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/works/img3_mobile@1x.webp 1x,
+                    ./img/works/img3_mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  class="works-img"
+                  src="./img/works/img3_deskt@1x.webp"
+                  alt
+                  width="360"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -166,12 +266,39 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./img/team/mark.jpg"
-                alt="Mark Guerrero"
-                width="264"
-              />
+              <picture>
+                <source
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team/img1_deskt@1x.jpg 1x,
+                    ./img/team/img1_deskt@2x.jpg 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/team/img1_tablet@1x.jpg 1x,
+                    ./img/team/img1_tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/team/img1_mobile@1x.jpg 1x,
+                    ./img/team/img1_mobile@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team-img"
+                  src="./img/team/img1_mobile@1x.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                />
+              </picture>
+
               <div class="cont-team">
                 <h3 class="card-title">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -210,12 +337,39 @@
             </li>
 
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./img/team/tom.jpg"
-                alt="Tom Ford"
-                width="264"
-              />
+              <picture>
+                <source
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team/img2_deskt@1x.jpg 1x,
+                    ./img/team/img2_deskt@2x.jpg 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/team/img2_tablet@1x.jpg 1x,
+                    ./img/team/img2_tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/team/img2_mobile@1x.jpg 1x,
+                    ./img/team/img2_mobile@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team-img"
+                  src="./img/team/img2_mobile@1x.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                />
+              </picture>
+
               <div class="cont-team">
                 <h3 class="card-title">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -254,12 +408,40 @@
             </li>
 
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./img/team/camila.jpg"
-                alt="Camila Garcia"
-                width="264"
-              />
+              <picture>
+                <source
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team/img3_deskt@1x.jpg 1x,
+                    ./img/team/img3_deskt@2x.jpg 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/team/img3_tablet@1x.jpg 1x,
+                    ./img/team/img3_tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/team/img3_mobile@1x.jpg 1x,
+                    ./img/team/img3_mobile@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="team-img"
+                  src="./img/team/img3_mobile@1x.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                />
+              </picture>
+
               <div class="cont-team">
                 <h3 class="card-title">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -298,12 +480,40 @@
             </li>
 
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./img/team/daniel.jpg"
-                alt="Daniel Wilson"
-                width="264"
-              />
+              <picture>
+                <source
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team/img4_deskt@1x.jpg 1x,
+                    ./img/team/img4_deskt@2x.jpg 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/team/img4_tablet@1x.jpg 1x,
+                    ./img/team/img4_tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/team/img4_mobile@1x.jpg 1x,
+                    ./img/team/img4_mobile@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="team-img"
+                  src="./img/team/daniel.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                />
+              </picture>
+
               <div class="cont-team">
                 <h3 class="card-title">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -399,7 +609,7 @@
     <footer class="footer">
       <div class="container container-footer">
         <!-- FIRST PART FOOTER -->
-        <div class="footer-first">
+        <div class="footer-first footer-part">
           <a class="logo logo-footer" href="./index.html"
             ><span class="logo-web">Web</span
             ><span class="logo-footer-second">Studio</span></a
@@ -410,7 +620,7 @@
           </p>
         </div>
         <!-- SECOND PART FOOTER -->
-        <div class="footer-second">
+        <div class="footer-second footer-part">
           <p class="text-social"><b>Social media</b></p>
           <ul class="social-list footer-list">
             <li class="social-item footer-item">
@@ -445,7 +655,7 @@
         </div>
 
         <!-- THIRD PART FOOTER -->
-        <div class="footer-third">
+        <div class="footer-third footer-part">
           <strong class="calling-heading">Subscribe</strong>
           <form class="calling-form" name="subscribe">
             <input
@@ -480,7 +690,7 @@
         <form
           class="field-modal"
           name="modal
-      "
+        "
           autocomplete="on"
         >
           <!-- MODALFORM LIST -->
@@ -569,6 +779,87 @@
         </form>
       </div>
     </div>
+
+    <!-- MOBILE MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button
+        class="menu-toggle js-close-menu"
+        data-modal-close
+        type="button"
+        width="24"
+        height="24"
+      >
+        <svg class="svg-close-btn" width="8" height="8">
+          <use href="./img/symbol-defs1.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+
+      <nav class="main-nav-mobile">
+        <ul class="nav-list-mobile">
+          <li class="nav-item-mobile">
+            <a class="nav-link-mobile" href="./index.html">Studio</a>
+          </li>
+
+          <li class="nav-item-mobile">
+            <a class="nav-link-mobile" href="./potfolio.html">Portfolio</a>
+          </li>
+
+          <li class="nav-item-mobile">
+            <a class="nav-link-mobile" href>Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="conection-list-mobile">
+        <li class="conection-item-mobile email">
+          <a class="conection-link-mobile" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="conection-item-mobile">
+          <a class="conection-link-mobile" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+      </ul>
+      <ul class="social-list social-list-mobile">
+        <li class="social-item social-item-mobile">
+          <a class="social-link social-link-mobile" href="#">
+            <svg class="icon" width="16" height="16">
+              <use href="./img/symbol-defs1.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item social-item-mobile item-twitter">
+          <a class="social-link social-link-mobile link-twitter" href="#">
+            <svg class="icon icon-twitter" width="16" height="13">
+              <use href="./img/symbol-defs1.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item social-item-mobile item-facebook">
+          <a class="social-link social-link-mobile link-facebook" href="#">
+            <svg class="icon icon-facebook" width="8" height="16">
+              <use href="./img/symbol-defs1.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item social-item-mobile item-linkedin">
+          <a class="social-link social-link-mobile link-linkedin" href="#">
+            <svg class="icon icon-linkedin" width="16" height="16">
+              <use href="./img/symbol-defs1.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      defer
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js" defer></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

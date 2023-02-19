@@ -18,7 +18,7 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="container header-container header-portfolio">
+      <div class="container header-container">
         <a class="logo" href="./index.html"
           ><span class="logo-web">Web</span>Studio</a
         >
@@ -51,6 +51,26 @@
             >
           </li>
         </ul>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -59,7 +79,7 @@
       <section class="section section-potfolio">
         <div class="container portfolio-container">
           <!-- filter BTN-->
-          <h1 class="portfolio-title">Potfolio</h1>
+          <h1 class="portfolio-title visual-hidden">Potfolio</h1>
 
           <ul class="porfolio-list list-filter">
             <li class="portfolio-item item-filter">
@@ -84,12 +104,39 @@
             <li class="card-item">
               <a class="card-link" href="#">
                 <div class="card-img-block">
-                  <img
-                    class="card-img"
-                    src="./img/portfolio/img1.jpg"
-                    alt="Banking App Interface Concept"
-                  />
-                  <div class="card-description">
+                  <picture>
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/img1_deskt@1x.jpg 1x,
+                        ./img/portfolio/img1_deskt@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/img1_tablet@1x.jpg 1x,
+                        ./img/portfolio/img1_tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/img1_mobile@1x.jpg 1x,
+                        ./img/portfolio/img1_mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="card-img"
+                      src="./img/portfolio/img1_mobile@1x.jpg 1x"
+                      alt="Meditaion App"
+                    />
+                  </picture>
+                  <div>
+                    class="card-description">
                     <span class="card-description-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -108,11 +155,37 @@
             <li class="card-item">
               <a class="card-link" href="#">
                 <div class="card-img-block">
-                  <img
-                    class="card-img"
-                    src="./img/portfolio/img2.jpg"
-                    alt="Cashless Payment"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/img2_deskt@1x.jpg 1x,
+                        ./img/portfolio/img2_deskt@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/img2_tablet@1x.jpg 1x,
+                        ./img/portfolio/img2_tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/img2_mobile@1x.jpg 1x,
+                        ./img/portfolio/img2_mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="card-img"
+                      src="./img/portfolio/img2_mobile@1x.jpg 1x"
+                      alt="Meditaion App"
+                    />
+                  </picture>
                   <div class="card-description">
                     <span class="card-description-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -131,18 +204,48 @@
             <li class="card-item">
               <a class="card-link" href="#">
                 <div class="card-img-block">
-                  <img
-                    class="card-img"
-                    src="./img/portfolio/img3.jpg"
-                    alt="Meditaion App"
-                  />
-                  <div class="card-description">
-                    <span class="card-description-text">
-                      14 Stylish and User-Friendly App Design Concepts · Task
-                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                      App · Cloud Storage App
-                    </span>
-                  </div>
+                  <picture>
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/img3_deskt@1x.jpg 1x,
+                        ./img/portfolio/img3_deskt@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/img3_tablet@1x.jpg 1x,
+                        ./img/portfolio/img3_tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/img3_mobile@1x.jpg 1x,
+                        ./img/portfolio/img3_mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      4
+                      class="card-img"
+                      src="./img/portfolio/img3_mobile@1x.jpg 1x"
+                      alt="Meditaion App"
+                      <
+                      picture
+                    />
+
+                    <div class="card-description">
+                      <span class="card-description-text">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </span>
+                    </div>
+                  </picture>
                 </div>
                 <div class="card-cont">
                   <h2 class="card-heading">Meditaion App</h2>
@@ -154,11 +257,38 @@
             <li class="card-item">
               <a class="card-link" href="#">
                 <div class="card-img-block">
-                  <img
-                    class="card-img"
-                    src="./img/portfolio/img4.jpg"
-                    alt="Taxi Service"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/img4_deskt@1x.jpg 1x,
+                        ./img/portfolio/img4_deskt@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/img4_tablet@1x.jpg 1x,
+                        ./img/portfolio/img4_tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/img4_mobile@1x.jpg 1x,
+                        ./img/portfolio/img4_mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="card-img"
+                      src="./img/portfolio/img4_mobile@1x.jpg 1x"
+                      alt="Meditaion App"
+                    />
+                  </picture>
+
                   <div class="card-description">
                     <span class="card-description-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -177,11 +307,37 @@
             <li class="card-item">
               <a class="card-link" href="#">
                 <div class="card-img-block">
-                  <img
-                    class="card-img"
-                    src="./img/portfolio/img5.jpg"
-                    alt="Screen Illustrations"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/img5_deskt@1x.jpg 1x,
+                        ./img/portfolio/img5_deskt@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/img5_tablet@1x.jpg 1x,
+                        ./img/portfolio/img5_tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/img5_mobile@1x.jpg 1x,
+                        ./img/portfolio/img5_mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="card-img"
+                      src="./img/portfolio/img5_mobile@1x.jpg 1x"
+                      alt="Meditaion App"
+                    />
+                  </picture>
                   <div class="card-description">
                     <span class="card-description-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -200,11 +356,37 @@
             <li class="card-item">
               <a class="card-link" href="#">
                 <div class="card-img-block">
-                  <img
-                    class="card-img"
-                    src="./img/portfolio/img6.jpg"
-                    alt="Online Courses"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/img6_deskt@1x.jpg 1x,
+                        ./img/portfolio/img6_deskt@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/img6_tablet@1x.jpg 1x,
+                        ./img/portfolio/img6_tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/img6_mobile@1x.jpg 1x,
+                        ./img/portfolio/img6_mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="card-img"
+                      src="./img/portfolio/img6_mobile@1x.jpg 1x"
+                      alt="Meditaion App"
+                    />
+                  </picture>
                   <div class="card-description">
                     <span class="card-description-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -223,11 +405,37 @@
             <li class="card-item">
               <a class="card-link" href="#">
                 <div class="card-img-block">
-                  <img
-                    class="card-img"
-                    src="./img/portfolio/img7.jpg"
-                    alt="Instagram Stories Concept"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/img7_deskt@1x.jpg 1x,
+                        ./img/portfolio/img7_deskt@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/img7_tablet@1x.jpg 1x,
+                        ./img/portfolio/img7_tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/img7_mobile@1x.jpg 1x,
+                        ./img/portfolio/img7_mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="card-img"
+                      src="./img/portfolio/img7_mobile@1x.jpg 1x"
+                      alt="Meditaion App"
+                    />
+                  </picture>
                   <div class="card-description">
                     <span class="card-description-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -246,11 +454,37 @@
             <li class="card-item">
               <a class="card-link" href="#">
                 <div class="card-img-block">
-                  <img
-                    class="card-img"
-                    src="./img/portfolio/img8.jpg"
-                    alt="Organic Food"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/img8_deskt@1x.jpg 1x,
+                        ./img/portfolio/img8_deskt@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/img8_tablet@1x.jpg 1x,
+                        ./img/portfolio/img8_tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/img8_mobile@1x.jpg 1x,
+                        ./img/portfolio/img8_mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="card-img"
+                      src="./img/portfolio/img8_mobile@1x.jpg 1x"
+                      alt="Meditaion App"
+                    />
+                  </picture>
                   <div class="card-description">
                     <span class="card-description-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -269,11 +503,37 @@
             <li class="card-item">
               <a class="card-link" href="#">
                 <div class="card-img-block">
-                  <img
-                    class="card-img"
-                    src="./img/portfolio/img9.jpg"
-                    alt="Fresh Coffee"
-                  />
+                  <picture>
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/img9_deskt@1x.jpg 1x,
+                        ./img/portfolio/img9_deskt@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/img9_tablet@1x.jpg 1x,
+                        ./img/portfolio/img9_tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/portfolio/img9_mobile@1x.jpg 1x,
+                        ./img/portfolio/img9_mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="card-img"
+                      src="./img/portfolio/img9_mobile@1x.jpg 1x"
+                      alt="Meditaion App"
+                    />
+                  </picture>
                   <div class="card-description">
                     <span class="card-description-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -346,8 +606,8 @@
           <form class="calling-form" name="subscribe">
             <input
               class="footer-form-mail"
-              type="email"
               name="email"
+              type="email"
               placeholder="E-mail"
             />
 
@@ -356,5 +616,81 @@
         </div>
       </div>
     </footer>
+
+    MOBILE MENU
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" data-modal-close type="button">
+        <svg class="svg-close-btn" width="8" height="8">
+          <use href="./img/symbol-defs1.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+
+      <nav class="main-nav-mobile">
+        <ul class="nav-list-mobile">
+          <li class="nav-item-mobile">
+            <a class="nav-link-mobile" href="./index.html">Studio</a>
+          </li>
+
+          <li class="nav-item-mobile">
+            <a class="nav-link-mobile" href="./potfolio.html">Portfolio</a>
+          </li>
+
+          <li class="nav-item-mobile">
+            <a class="nav-link-mobile" href>Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="conection-list-mobile">
+        <li class="conection-item-mobile email">
+          <a class="conection-link-mobile" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="conection-item-mobile">
+          <a class="conection-link-mobile" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+      </ul>
+      <ul class="social-list social-list-mobile">
+        <li class="social-item social-item-mobile">
+          <a class="social-link social-link-mobile" href
+            ><svg class="icon" width="16" height="16">
+              <use href="./img/symbol-defs1.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item social-item-mobile item-twitter">
+          <a class="social-link social-link-mobile link-twitter" href
+            ><svg class="icon icon-twitter" width="16" height="13">
+              <use href="./img/symbol-defs1.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item social-item-mobile item-facebook">
+          <a class="social-link social-link-mobile link-facebook" href
+            ><svg class="icon icon-facebook" width="8" height="16">
+              <use href="./img/symbol-defs1.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item social-item-mobile item-linkedin">
+          <a class="social-link social-link-mobile link-linkedin" href
+            ><svg class="icon icon-linkedin" width="16" height="16">
+              <use href="./img/symbol-defs1.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      defer
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js" defer></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
